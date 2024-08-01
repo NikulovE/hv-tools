@@ -8,7 +8,7 @@ PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/NikulovE/hv-tools/
 PKG_SOURCE_DATE:=$(subst(.,-,$(PKG_VERSION)))
 PKG_SOURCE_RELEASE:=$(subst(r,,$(PKG_RELEASE)))
-PKG_SOURCE_VERSION:=baa6a1c7282f5c0767a4133011bdd980caddd8c0
+PKG_SOURCE_VERSION:=92f559495740a55480eb8c1b2b1925cf75d1c91b
 
 PKG_MAINTAINER:=Evgeniy Nikulov <nikulov@live.ru>
 PKG_LICENSE:=GPL-2.0
