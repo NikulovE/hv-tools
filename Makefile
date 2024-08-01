@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hv-tools
 PKG_VERSION:=2024.08.01
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/NikulovE/hv-tools/
@@ -21,7 +21,7 @@ define Package/hv-tools
 	CATEGORY:=Utilities
 	TITLE:=Hyper-V Guest Tools
 	URL:=https://github.com/NikulovE/hv-tools/
-	DEPENDS:=+procd
+	DEPENDS:=+procd +uci +libpthread
 endef
 
 define Package/hv-tools/description
