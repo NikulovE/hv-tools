@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hv-tools
 PKG_VERSION:=2024.08.01
-PKG_RELEASE:=r1
+PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/NikulovE/hv-tools/
