@@ -17,21 +17,27 @@ This package provides Hyper-V Guest Tools for OpenWrt, including various utiliti
 To install the Hyper-V Guest Tools package on OpenWrt, follow these steps:
 
 **Clone the OpenWrt repository** (if you haven't already):
+
 ```sh
 git clone https://github.com/openwrt/openwrt.git
 cd openwrt
 ```
+
 Add the Hyper-V Guest Tools package to your OpenWrt build:
 
 Navigate to the package/ directory:
-``sh
+
+```sh
 cd package
 ```
+
 Create a new directory for the package:
+
 ```sh
 mkdir hv-tools
 cd hv-tools
 ```
+
 Create a Makefile and files/ directory as described in the package structure.
 Configure and build OpenWrt:
 
@@ -39,16 +45,19 @@ Configure and build OpenWrt:
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make defconfig
-make menuconfig  # Select 'hv-tools' in the 'Base system' section
+make menuconfig 
 make
 ```
+
 Install the package on your OpenWrt device:
 
 Copy the built package file from bin/targets/x86/64/packages/ to your OpenWrt device.
 Install the package using opkg:
+
 ```sh
 opkg install /tmp/hv-tools.ipk
 ```
+
 Configuration
 The package includes initialization scripts located in /etc/rc.d/:
 
