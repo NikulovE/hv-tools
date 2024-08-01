@@ -8,7 +8,7 @@ PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/NikulovE/hv-tools/
 PKG_SOURCE_DATE:=$(subst(.,-,$(PKG_VERSION)))
 PKG_SOURCE_RELEASE:=$(subst(r,,$(PKG_RELEASE)))
-PKG_SOURCE_VERSION:=489c57efd46983e688579974a2ab7aeaa7df8d83
+PKG_SOURCE_VERSION:=baa6a1c7282f5c0767a4133011bdd980caddd8c0
 
 PKG_MAINTAINER:=Evgeniy Nikulov <nikulov@live.ru>
 PKG_LICENSE:=GPL-2.0
@@ -20,6 +20,7 @@ define Package/hv-tools
 	SECTION:=utils
 	CATEGORY:=Utilities
 	TITLE:=Hyper-V Guest Tools
+	URL:=https://github.com/NikulovE/hv-tools/
 	DEPENDS:=+procd
 endef
 
