@@ -45,7 +45,7 @@ Configure and build OpenWrt:
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make defconfig
-make menuconfig 
+make menuconfig #select hv-tools in utils
 make
 ```
 

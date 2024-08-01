@@ -17,8 +17,8 @@ PKG_LICENSE_FILES:=LICENSE
 include $(INCLUDE_DIR)/package.mk
 
 define Package/hv-tools
-  SECTION:=base
-  CATEGORY:=Base system
+  SECTION:=utils
+  CATEGORY:=Utilities
   TITLE:=Hyper-V Guest Tools
   DEPENDS:=+procd
 endef
