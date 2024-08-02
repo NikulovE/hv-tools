@@ -1,8 +1,12 @@
 # Explanation
 **Interface Name**: The script uses the interface name from the configuration file and applies settings via UCI.
+
 **IP Addresses and Netmasks**: IPv4 and IPv6 addresses and netmasks are configured by reading values from the configuration file.
+
 **Gateway and DNS**: The script also sets up gateway and DNS settings using UCI.
+
 **Protocol**: The script supports dynamic (DHCP) and static configurations based on the BOOTPROTO setting.
+
 **Network Restart**: After applying the changes, the network service is restarted to ensure settings are applied.
 
 ## Configuration File Format
