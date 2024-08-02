@@ -9,7 +9,7 @@
 Ensure your configuration file follows this format:
 
 ```
-# Configuration file format example (following uci show network network.*DEVICE*.device
+# Configuration file format example (following uci show network network.*DEVICE*.device)
 DEVICE=lan
 BOOTPROTO=static
 
