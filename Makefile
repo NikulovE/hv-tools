@@ -34,9 +34,9 @@ define Package/hv-tools/install
 	$(INSTALL_BIN) $(LINUX_DIR)/tools/hv/hv_set_ifconfig.sh $(1)/usr/libexec/hypervkvpd/hv_set_ifconfig
 
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) .$(LINUX_DIR)/tools/hv/hv_fcopy_daemon $(1)/etc/init.d/hv_fcopy_daemon
-	$(INSTALL_BIN) .$(LINUX_DIR)/tools/hv/hv_kvp_daemon $(1)/etc/init.d/hv_kvp_daemon
-	$(INSTALL_BIN) .$(LINUX_DIR)/tools/hv/hv_vss_daemon $(1)/etc/init.d/hv_vss_daemon
+	$(INSTALL_BIN) $(LINUX_DIR)/tools/hv/hv_fcopy_daemon $(1)/etc/init.d/hv_fcopy_daemon
+	$(INSTALL_BIN) $(LINUX_DIR)/tools/hv/hv_kvp_daemon $(1)/etc/init.d/hv_kvp_daemon
+	$(INSTALL_BIN) $(LINUX_DIR)/tools/hv/hv_vss_daemon $(1)/etc/init.d/hv_vss_daemon
 endef
 
 $(eval $(call BuildPackage,hv-tools))
