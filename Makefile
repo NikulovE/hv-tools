@@ -3,6 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=hv-tools
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
+PKG_MAINTAINER:=Evgeniy Nikulov <nikulov@live.ru>
+PKG_LICENSE:=MIT
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/kernel.mk
@@ -17,7 +19,7 @@ define Package/hv-tools
 endef
 
 define Package/hv-tools/description
-  This package contains Hyper-V Guest Tools for OpenWrt, including various utilities and daemons.
+This package contains Hyper-V Guest Tools for OpenWrt, including various utilities and daemons.
 endef
 
 define Build/Compile
