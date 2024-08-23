@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/NikulovE/hv-tools/
-PKG_SOURCE_VERSION:=be521010ba8b7db4a27e6881963ac7d850e5d39d
+PKG_SOURCE_VERSION:=844a7715a3c7757b8dd28716c748accb9c0dce1f
 
 PKG_MAINTAINER:=Evgeniy Nikulov <nikulov@live.ru>
 PKG_LICENSE:=MIT
