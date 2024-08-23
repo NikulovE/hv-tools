@@ -20,8 +20,7 @@ define Package/hv-tools
   CATEGORY:=Utilities
   SUBMENU:=Virtualization
   TITLE:=Hyper-V Guest Tools
-  DEPENDS:=+procd +libpthread
-  DEPENDS:=@(TARGET_x86||TARGET_x86_64)
+  DEPENDS:=+procd +libpthread @(TARGET_x86||TARGET_x86_64)
 endef
 
 define Package/hv-tools/description
