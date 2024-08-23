@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This example script parses /etc/resolv.conf to retrive DNS information.
 # In the interest of keeping the KVP daemon code free of distro specific
