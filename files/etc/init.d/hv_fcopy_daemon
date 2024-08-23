@@ -15,3 +15,4 @@ start_service() {
         procd_set_param pidfile /var/run/hv_fcopy_daemon.pid
         procd_close_instance
 }
+
