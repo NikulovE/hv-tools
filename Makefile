@@ -29,7 +29,7 @@ This package contains Hyper-V Guest Tools for OpenWrt, including various utiliti
 endef
 
 define Build/Compile
-	$(MAKE_VARS) $(MAKE) $(MAKE_FLAGS) all -C ./files/tools/hv
+	$(MAKE_VARS) $(MAKE) $(MAKE_FLAGS) all -C $(PKG_BUILD_DIR)/files/tools/hv
 endef
 
 define Package/hv-tools/install
