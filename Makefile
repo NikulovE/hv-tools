@@ -34,9 +34,9 @@ endef
 
 define Package/hv-tools/install
 	$(INSTALL_DIR) $(1)/usr/sbin
-	$(INSTALL_BIN) ./files/tools/hv/hv_kvp_daemon $(1)/usr/sbin/hv_kvp_daemon
-	$(INSTALL_BIN) ./files/tools/hv/hv_vss_daemon $(1)/usr/sbin/hv_vss_daemon
-	$(INSTALL_BIN) ./files/tools/hv/hv_fcopy_daemon $(1)/usr/sbin/hv_fcopy_daemon
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/files/tools/hv/hv_kvp_daemon $(1)/usr/sbin/hv_kvp_daemon
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/files/tools/hv/hv_vss_daemon $(1)/usr/sbin/hv_vss_daemon
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/files/tools/hv/hv_fcopy_daemon $(1)/usr/sbin/hv_fcopy_daemon
 	
 	$(INSTALL_DIR) $(1)/usr/libexec/hypervkvpd 
 	$(INSTALL_BIN) ./files/usr/libexec/hypervkvpd/hv_get_dhcp_info.sh $(1)/usr/libexec/hypervkvpd/hv_get_dhcp_info
