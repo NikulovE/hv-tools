@@ -25,7 +25,7 @@ define Package/hv-tools
 endef
 
 define Package/hv-tools/description
-This package contains Hyper-V Guest Tools for OpenWrt, including various utilities and daemons.
+  This package contains Hyper-V Guest Tools for OpenWrt, including various utilities and daemons.
 endef
 
 define Build/Compile
