@@ -3,7 +3,6 @@
 START=21
 
 USE_PROCD=1
-NAME=hv_fcopy_daemon
 PROG=/usr/sbin/hv_fcopy_daemon
 
 start_service() {
